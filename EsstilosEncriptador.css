@@ -1,0 +1,351 @@
+
+*{
+    font-family: "Inter";
+}
+
+body{
+    background: #F3F5FC;
+    /* background-size: 1440px 1217px; */
+  
+}
+.logo{
+    position:absolute;
+    left:2.777vw;
+    top: 3.287vh;
+    width: 7vw;
+    height: 7vh;
+    /* filter: hue-rotate(180deg); */
+}
+
+.cajaTexto{
+    display: inline-block;
+    position:absolute;
+    top: 15.24vh;
+    left: 14.38vw;
+    height: 60.345vh;
+    width: 64.219vw;
+    font-size: 32px;
+    color: #0A3871;
+    border: none;
+    background: #F3F5FC;
+}
+.cajaTexto:focus{
+    outline: none;
+}
+.cajaTexto::placeholder{
+    color: #0A3871;
+}
+
+
+.cuadroLateral{
+    
+    position:relative;
+    left:80vw;
+    bottom: -7vh;
+    width: 17.5vw;
+    height: 90.018vh;
+    display: inline-flex;
+
+}
+
+.muestraTextoEncriptado{
+    display: inline-block;
+    position:absolute;
+    left:81.9vw;
+    bottom: 2.5vh;
+    color: #0A3871;
+    width: 14vw;
+    height: 82.759vh;
+    overflow-wrap: break-word;
+    border: none;
+    background: none;
+    font-size: 32px;
+}
+
+
+.imagenMuñeco{
+    position:relative;
+    left:63.25vw;
+    bottom: 40vh;
+    transform:scaleX(-1);
+    width: 15.625vw;
+    height: 36.298vh;
+ 
+    
+}
+
+.imagenMuñecoRojo{
+    position:relative;
+    left:63.25vw;
+    bottom: 40vh;
+    transform:scaleX(-1);
+    width: 15.625vw;
+    height: 36.298vh;
+    filter: hue-rotate(180deg);
+
+}
+
+.sinTexto{
+    position:absolute;
+    left:82.5vw;
+    bottom: 40vh;
+    width: 13.125vw;
+    height: 11.071vh;
+}
+.aviso{
+    position:absolute;
+    left: 14.618vw;;
+    top: 77.2232305vh;
+    font-size: 18px;
+    color: #495057;
+}
+.aviso::before{
+    content: "⚠️";
+}
+.encriptar{
+    width: 12.813vw;
+    height: 6.080vh;
+    position: absolute;
+    left: 14.453vw;
+    top: 83.394vh;
+    background-color: #0A3871;
+    color: #F3F5FC;
+    font-size: 20;
+    border-radius: 2.178vh;
+    margin-right: 0.938vw;
+    margin-left: 0.469vw;
+    /* filter: hue-rotate(180deg); */
+}
+.desencriptar{
+    width: 12.813vw;
+    height: 6.080vh;
+    position: absolute;
+    left: 27.578vw;
+    top: 83.394vh;
+    background-color: #F3F5FC;
+    color: #0A3871;
+    font-size: 20;
+    border-radius: 2.178vh;
+    margin-left: 0.938vw;
+    margin-right: 0.469vw;
+    /* filter: hue-rotate(180deg); */
+}
+.copiar{
+    width: 12.813vw;
+    height: 6.080vh;
+    position: absolute;
+    left: 82.70vw;
+    bottom: 10.527vh;
+    background-color: #F3F5FC;
+    color: #0A3871;
+    font-size: 20;
+    border-radius: 2.178vh;
+}
+/* Efectos condicionales  */
+.cajaTexto.textoProhibido{
+    background: #FBA8A8;
+    transition-duration: 2s;
+}
+
+.textoProhibido-body{
+    background: #FBA8A8;
+    transition-duration: 2s;
+}
+@media screen and (max-width:480px){
+
+    .logo{
+        position:absolute;
+        left:2.777vw;
+        top: 24px;
+        width: 20vw;
+        height: 4.356vh;
+    }
+    .cajaTexto{
+        display: inline-block;
+        position:absolute;
+        top: 16.292vh;
+        left: 10.667vw;
+        height: 32.047vh;
+        width: 78.667vw;
+        font-size: 16px;
+        color: #0A3871;
+        border: none;
+        background: #F3F5FC;
+    }
+    .cuadroLateral{
+        position:absolute;
+        left:4.267vw;
+        top: 75.777vh;
+        width: 91.467vw;
+        height: 19.936vh;  
+    }
+    .muestraTextoEncriptado{
+        position:absolute;
+        left:12.5vw;
+        top: 78vh;
+        width: 75vw;
+        height: 14vh;
+        color: #0A3871;
+        overflow-wrap: break-word;
+        font-size: 16px;
+    }
+    .imagenMuñeco{
+        display: none;
+    }
+    .imagenMuñecoRojo{
+        display: none;
+    }
+    .sinTexto{
+        position:absolute;
+        left:14.933vw;
+        top: 79.207vh;
+        width: 70.133vw;
+        height: 13.076vh;
+    }
+    .aviso{
+        position:absolute;
+        left: 10.667vw;;
+        top: 48.339vh;
+        font-size: 16px;
+        color: #495057;
+    }
+    .encriptar{
+        display: inline-block;
+        width: 78.667vw;
+        height: 7.181vh;
+        position: absolute;
+        left: 10.667vw;
+        top: 51.983vh;
+        background-color: #0A3871;
+        color: #F3F5FC;
+        font-size: 20;
+        border-radius: 2.178vh;
+        
+        
+        /* filter: hue-rotate(180deg); */
+    }
+    .desencriptar{
+        width: 78.667vw;
+        height: 7.181vh;
+        position: absolute;
+        left: 10.667vw;
+        top: 61.735vh;
+        background-color: #F3F5FC;
+        color: #0A3871;
+        font-size: 20;
+        border-radius: 2.178vh;
+        margin-left: 0.938vw;
+        margin-right: 0.469vw;
+        /* filter: hue-rotate(180deg); */
+    }
+    .copiar{
+        width: 74.4vw;
+        height: 7.181vh;
+        position: absolute;
+        left: 12.8vw;
+        top: 1592px;
+        background-color: #F3F5FC;
+        color: #0A3871;
+        font-size: 20;
+        border-radius: 2.178vh;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+    .logo{
+        position:absolute;
+        left:2.777vw;
+        top: 24px;
+        width: 20vw;
+        height: 4.356vh;
+    }
+    .cajaTexto{
+        display: inline-block;
+        position:absolute;
+        top: 20.443vh;
+        left: 5.208vw;
+        height: 50.767vh;
+        width: 89.583vw;
+        font-size: 32px;
+        color: #0A3871;
+        border: none;
+        background: #F3F5FC;
+    }
+    .cuadroLateral{
+        position:absolute;
+        left:5.208vw;
+        top: 85.264vh;
+        width: 89.583vw;
+        height: 11.329vh;  
+    }
+    .muestraTextoEncriptado{
+        position:absolute;
+        left:10vw;
+        top: 86vh;
+        width: 80vw;
+        height: 11.329vh;
+        color: #0A3871;
+        overflow-wrap: break-word;
+        font-size: 32px;
+    }
+    .imagenMuñeco{
+        display: none;
+    }
+    .imagenMuñecoRojo{
+        display: none;
+    }
+    .sinTexto{
+        position:absolute;
+        left:29vw;
+        top: 86vh;
+        width: 40vw;
+        height: 10vh;
+    }
+    .aviso{
+        position:absolute;
+        left: 7.813vw;;
+        top: 71.210vh;
+        font-size: 16px;
+        color: #495057;
+    }
+    .encriptar{
+        display: inline-block;
+        width: 43.229vw;
+        height: 5.707vh;
+        position: absolute;
+        left: 5.208vw;
+        top: 74.106vh;
+        background-color: #0A3871;
+        color: #F3F5FC;
+        font-size: 32;
+        border-radius: 2.178vh;
+        
+        
+        /* filter: hue-rotate(180deg); */
+    }
+    .desencriptar{
+        width: 43.229vw;
+        height: 5.707vh;
+        position: absolute;
+        left: 51.563vw;
+        top: 74.106vh;
+        background-color: #F3F5FC;
+        color: #0A3871;
+        font-size: 32;
+        border-radius: 2.178vh;
+        margin-left: 0.938vw;
+        margin-right: 0.469vw;
+        /* filter: hue-rotate(180deg); */
+    }
+    .copiar{
+        width: 74.4vw;
+        height: 7.181vh;
+        position: absolute;
+        left: 12.8vw;
+        top: 121.582vh;
+        background-color: #F3F5FC;
+        color: #0A3871;
+        font-size: 32;
+        border-radius: 2.178vh;
+    }
+}

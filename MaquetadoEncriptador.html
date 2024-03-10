@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html Lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">               
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="EsstilosEncriptador.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+
+        <img class="logo" src="Imagenes/Logo.png" alt="Logo de alura">
+    </header>
+    <main>
+        <textarea type="text" class="cajaTexto" id="ingresoTexto" required placeholder="Ingrese el texto aqui"></textarea>
+        <script src="javaencriptador.js"></script>
+    </main>
+    <aside id="informacionLateral" class="cuadroEncriptado">
+        <img class="cuadroLateral" src="Imagenes/Rectangle 1.png" alt="Recuadro resultado de encriptación" id="contenedorTextoEncriptado">
+        <textarea class="muestraTextoEncriptado" id="muestraEncriptada"></textarea>
+        <img class="imagenMuñeco" src="Imagenes/AzulMod1.jpg" alt="ImagenMuñeco con una lupa" id="Muñeca">
+        <img class="imagenMuñecoRojo" src="Imagenes/AzulMod1.jpg" alt="ImagenMuñeco con una lupa de pie" id="MuñecaRojo" style="display: none;">
+        <img class="sinTexto" src="Imagenes/Frame 5.png" alt="Recuadro que indica que no texto ingresado" id="rotulonMensaje">
+    </aside>
+        
+    <footer>
+        <f1 class="aviso">Solo letras minúsculas y sin acento</f1>
+        <button onclick="usuarioEncriptar();" id="botonEncriptador" class="encriptar"  >Encriptar</button>
+        <button  class="desencriptar" id="botonDesencriptador" >Desencriptar</button>
+        <button  id="botonCopiar" style="display: none;" class="copiar" >Copiar</button>
+    </footer>
+
+</body>
+</html>
+
